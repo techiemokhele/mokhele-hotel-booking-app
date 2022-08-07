@@ -7,6 +7,7 @@ import Header from "../../components/Header/Header";
 import FeaturedHotels from "../../components/FeaturedHotels/FeaturedHotels";
 import PropertyList from "../../components/PropertyList/PropertyList";
 import FeaturedLovedProperties from "../../components/FeaturedLovedProperties/FeaturedLovedProperties";
+import Subscribe from "../../components/Subscribe/Subscribe";
 
 const Home = () => {
   return (
@@ -56,6 +57,9 @@ const Home = () => {
         {/*guest selection*/}
         <h1 className="homeTitle">Homes our guest love</h1>
         <FeaturedLovedProperties />
+
+        {/*subscribe selection*/}
+        <Subscribe />
       </div>
     </div>
   );
