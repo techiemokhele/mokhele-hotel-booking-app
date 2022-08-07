@@ -1,8 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/Home/HomePage";
+import HotelListPage from "./pages/HotelList/HotelListPage";
+import SingleHotelPage from "./pages/HotelList/HotelListPage";
+
 function App() {
   return (
-    <div>
-      Hello world!
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/hotels" element={<HotelListPage />} />
+        <Route path="/single-hotel-view/:id" element={<SingleHotelPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
