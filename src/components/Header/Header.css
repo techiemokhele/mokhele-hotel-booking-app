@@ -85,6 +85,7 @@
 .date {
   position: absolute;
   top: 50px;
+  z-index: 2;
 }
 
 .options {
@@ -95,6 +96,7 @@
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px#ffbf00;
   -webkit-box-shadow: 2px 2px 2px 1px#ffbf00;
+  z-index: 2;
 }
 
 .optionItem {

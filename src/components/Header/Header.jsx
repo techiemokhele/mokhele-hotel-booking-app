@@ -78,11 +78,12 @@ const Header = ({ type }) => {
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              Need a booking lifetime of discounts? We got you!
+              Need to find your next stay? We got you!
             </h1>
             <p className="headerDescription">
-              Get the best rewards for your travels - while unlocking instant
-              savings of 10% or more with a free Mokhele Hotel Booking account.
+              <i>Get the best rewards for your travels</i> - search deals on
+              hotels, homes, and much more, while saving 10% or more with a free
+              Mokhele Hotel Booking account.
             </p>
             <button className="headerButton">Sign in / Sign up</button>
 
