@@ -1,7 +1,14 @@
 import React from "react";
+import Header from "../../components/Header/Header";
+import NavigationBar from "../../components/NavigationBar/NavigationBar";
 
 const HotelListPage = () => {
-  return <div>HotelListPage</div>;
+  return (
+    <div>
+      <NavigationBar />
+      <Header type="list" />
+    </div>
+  );
 };
 
 export default HotelListPage;
