@@ -1,12 +1,12 @@
 .subContainer {
   display: flex;
-  justify-content: column;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
   width: 100%;
   max-width: 1024px;
   background-color: #00224f;
-  padding: 50px 0;
+  padding: 50px 0px;
 }
 
 .subHeader {
@@ -15,6 +15,7 @@
 
 .subHeaderText {
   font-weight: 500;
+  padding-left: 5px;
 }
 
 .subCatch {

@@ -65,7 +65,7 @@ const PropertyList = () => {
             <FontAwesomeIcon icon={faVihara} style={{ color: "#0071c2" }} />{" "}
             Villas
           </h3>
-          <h4>477,435 villas</h4>
+          <h4>478,435 villas</h4>
         </div>
       </div>
       <div className="propertyListItem">

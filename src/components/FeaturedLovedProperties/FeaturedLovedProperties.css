@@ -11,6 +11,7 @@
   flex: 1;
   flex-direction: column;
   gap: 10px;
+  cursor: pointer;
 }
 
 .fpImage {
@@ -32,6 +33,12 @@
 
 .fpPrice {
   font-weight: 500;
+}
+
+.small {
+  font-size: 10px;
+  margin-top: -8px;
+  color: gray;
 }
 
 .fpRating {

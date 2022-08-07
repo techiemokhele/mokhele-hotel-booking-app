@@ -8,6 +8,7 @@ import FeaturedHotels from "../../components/FeaturedHotels/FeaturedHotels";
 import PropertyList from "../../components/PropertyList/PropertyList";
 import FeaturedLovedProperties from "../../components/FeaturedLovedProperties/FeaturedLovedProperties";
 import Subscribe from "../../components/Subscribe/Subscribe";
+import ConnectTravellers from "../../components/ConnectTravellers/ConnectTravellers";
 
 const Home = () => {
   return (
@@ -57,6 +58,10 @@ const Home = () => {
         {/*guest selection*/}
         <h1 className="homeTitle">Homes our guest love</h1>
         <FeaturedLovedProperties />
+
+        {/*connect travellers selection*/}
+        <h1 className="homeTitle">Connect with other travelers</h1>
+        <ConnectTravellers />
 
         {/*subscribe selection*/}
         <Subscribe />
