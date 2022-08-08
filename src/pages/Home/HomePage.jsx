@@ -3,12 +3,13 @@ import React from "react";
 //import custom components
 import "./HomePage.css";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
-import Header from "../../components/Header/Header";
+import Header from "../../components/constant/Header/Header";
 import FeaturedHotels from "../../components/FeaturedHotels/FeaturedHotels";
 import PropertyList from "../../components/PropertyList/PropertyList";
 import FeaturedLovedProperties from "../../components/FeaturedLovedProperties/FeaturedLovedProperties";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import ConnectTravellers from "../../components/ConnectTravellers/ConnectTravellers";
+import Footer from "../../components/constant/Footer/Footer";
 
 const Home = () => {
   return (
@@ -65,6 +66,9 @@ const Home = () => {
 
         {/*subscribe selection*/}
         <Subscribe />
+
+        {/*Footer selection*/}
+        <Footer />
       </div>
     </div>
   );

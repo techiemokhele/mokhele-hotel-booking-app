@@ -3,26 +3,15 @@ import "./Subscribe.css";
 
 const Subscribe = () => {
   return (
-    <div className="subContainer">
-      <div className="subHeader">
-        <h1 className="subHeaderText">Save data, save moola!</h1>
-        <span className="subCatch">
-          Sign up and we'll send the best deals to you
-        </span>
-      </div>
+    <div className="mail">
+      <h1 className="mailTitle">Save data, save moola!</h1>
+      <span className="mailDescription">
+        Sign up and we'll send the best deals to you
+      </span>
 
-      <div class="subscriptionFormWrap">
-        <input
-          type="email"
-          name="to"
-          autocapitalize="off"
-          required="true"
-          class="inputSubscription"
-          placeholder="Your email"
-          title=""
-          value=""
-        />
-        <button id="newsletterButtonFooter">Subscribe</button>
+      <div class="mailInputContainer">
+        <input type="email" placeholder="Enter your email address" />
+        <button>Subscribe</button>
       </div>
     </div>
   );

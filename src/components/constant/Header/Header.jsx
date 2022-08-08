@@ -81,7 +81,7 @@ const Header = ({ type }) => {
               Need to find your next stay? We got you!
             </h1>
             <p className="headerDescription">
-              <i>Get the best rewards for your travels</i> - search deals on
+              <b>Get the best rewards for your travels</b> - search deals on
               hotels, homes, and much more, while saving 10% or more with a free
               Mokhele Hotel Booking account.
             </p>
