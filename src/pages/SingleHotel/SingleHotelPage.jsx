@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowCircleLeft,
+  faArrowCircleRight,
+  faCircleXmark,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 
 //import components
 import Header from "../../components/constant/Header/Header";
@@ -37,13 +42,64 @@ const SingleHotelPage = () => {
     },
   ];
 
+  //image slider
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [openSlider, setOpenSlider] = useState(false);
+
+  //handle slider opener
+  const handleOpenSlider = (index) => {
+    setSlideNumber(index);
+    setOpenSlider(true);
+  };
+
+  const handleMove = (direction) => {
+    let slideObjectNumber;
+
+    if (direction === "left-move") {
+      slideObjectNumber = slideNumber === 0 ? 6 : slideNumber - 1;
+    } else {
+      slideObjectNumber = slideNumber === 6 ? 0 : slideNumber + 1;
+    }
+
+    //update state
+    setSlideNumber(slideObjectNumber);
+  };
+
   return (
     <div>
       <NavigationBar />
       <Header type="list" />
 
-      {/*selected hotel content*/}
       <div className="hotelContainer">
+        {/*image slider*/}
+        {openSlider && (
+          <div className="slider">
+            <FontAwesomeIcon
+              icon={faCircleXmark}
+              className="close"
+              onClick={() => setOpenSlider(false)}
+            />
+            <FontAwesomeIcon
+              icon={faArrowCircleLeft}
+              className="arrow"
+              onClick={() => handleMove("left-move")}
+            />
+            <div className="sliderWrapper">
+              <img
+                src={photos[slideNumber].src}
+                alt="hotel-pic-spec"
+                className="sliderImage"
+              />
+            </div>
+            <FontAwesomeIcon
+              icon={faArrowCircleRight}
+              className="arrow"
+              onClick={() => handleMove("right-move")}
+            />
+          </div>
+        )}
+
+        {/*selected hotel content*/}
         <div className="hotelWrapper">
           <button className="bookNow">Reserve</button>
           <h1 className="hotelTitle">Odyssey Luxury Apartments</h1>
@@ -59,12 +115,13 @@ const SingleHotelPage = () => {
             taxi
           </span>
           <div className="hotelImages">
-            {photos.map((photo) => (
+            {photos.map((photo, index) => (
               <div className="hotelImgWrapper">
                 <img
                   src={photo.src}
                   alt="hotel-pic-spec"
                   className="hotelImg"
+                  onClick={() => handleOpenSlider(index)}
                 />
               </div>
             ))}
