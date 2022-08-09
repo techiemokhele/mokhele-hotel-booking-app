@@ -1,0 +1,112 @@
+.searchItemContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  box-shadow: -0.4em 0.4rem #ffbf00;
+}
+
+.searchItemImage {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.searchItemDescription {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.searchItemTitle {
+  font-size: 20px;
+  color: #0071c2;
+}
+
+.searchItemDistance {
+  font-size: 12px;
+}
+
+.searchItemTaxiOp {
+  padding: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #ffbf00;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.searchItemSubtitle {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.searchItemFeatures {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.searchItemCancelOp {
+  font-size: 12px;
+  color: #008009;
+  font-weight: 700;
+}
+
+.isCancelOpSubtitle {
+  font-size: 12px;
+  color: #008009;
+}
+
+.searchItemRating {
+  display: flex;
+  justify-content: space-between;
+}
+.searchItemRating > span {
+  font-weight: 500;
+}
+.searchItemRating > button {
+  font-weight: 700;
+  color: #fff;
+  background-color: #ea4c46;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+}
+
+.searchItemDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.searchItemDetailsText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: right;
+}
+
+.searchItemPrice {
+  font-size: 24px;
+}
+
+.searchItemTaxOp {
+  font-size: 12px;
+  color: #555;
+}
+
+.searchItemCheckButton {
+  background-color: #0071c2;
+  color: #f5f5f5;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
