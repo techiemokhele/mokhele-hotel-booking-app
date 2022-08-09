@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/Home/HomePage";
 import HotelListPage from "./pages/HotelList/HotelListPage";
-import SingleHotelPage from "./pages/HotelList/HotelListPage";
+import SingleHotelPage from "./pages/SingleHotel/SingleHotelPage";
 
 function App() {
   return (
